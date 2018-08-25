@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div onmousedown="mDown(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+	 Mouse sobre mi</div>
+	 <script type="text/javascript">
+	 	function mOver(obj){
+	 		obj.innerHTML="Gracias";
+	 	}
+	 	function mOut(obj){
+	 		obj.innerHTML="Mouse sobre mi";
+	 	}
+	 	function mDown(obj){
+	 		obj.innerHTML="Release me";
+	 		obj.style.backgroundColor="#1ec5e5";
+	 	}
+	 </script>
+</body>
+</html>

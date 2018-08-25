@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>escribe un numero y as click en ok</p>
+	<input id="id1" type="number" min="100" max="300">
+	<button onclick="mifuncion()">OK</button>
+	<p>Si el numero es menor que 100 o mayor que 300,
+		un error se genera</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			function mifuncion(){
+				var inpObj=document.getElementById("id1").value;
+				if(inpObj<100 || inpObj>300){
+					document.getElementById("demo").innerHTML="numero incorrecto";
+				}else{
+					document.getElementById("demo").innerHTML="Numero correcto";
+				}
+			}
+		</script>
+</body>
+</html>

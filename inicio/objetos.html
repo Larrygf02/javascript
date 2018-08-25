@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Creando un objeto javascript</p>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<script>
+		//para declarar un objeto en javascript tenemos que
+		//abrirlo entre llaves
+		var persona={nombre:"Raul",apellido:"Larriega",edad:22,colordeojos:"marron"};
+		document.getElementById("demo").innerHTML=persona.nombre+" tiene "+persona.edad+" años";
+		document.getElementById("demo2").innerHTML=persona["nombre"]+" tiene "+persona["edad"]+" años";
+	</script> 
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Que se puede hacer con javascript</h1>
+	<p id="demo">JavaScript puede cambiar el contenido HTML</p>
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Hola JavaScript'">Haz click</button>
+	<h1>JavaScript puede cambiar imagenes</h1>
+	<img id="miimagen" onclick="cambiarimagen()" src="foco.gif" width="100" height="180">
+	<p>Haz click en la bombilla para encender o apagar la luz</p>
+	<br>
+	<p id="demo2">Con JavaScript tambien se puede cambiar el estilo de un elemento</p>
+	<button type="button" onclick="mifuncion()">Click sobre mi</button>
+	<script type="text/javascript">
+		function cambiarimagen(){
+			 var image=document.getElementById('miimagen');
+			 if(image.src.match("focot")){
+			 	image.src="foco.gif";
+			 }else{
+			 	image.src="focot.gif";
+			 }
+		}
+		function mifuncion(){
+			var x=document.getElementById("demo2");
+			x.style.fontSize="25px";
+			x.style.color="red";
+			x.style.border="1px solid yellow";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Alcance de las variables</title>
+</head>
+<body>
+	<p>Una variable global puede ser accedido desde cualquier script o funcion</p>
+	<p id="demo"></p>
+	<p>SI asignamos un valor a una variable que no ha sido declarada, entonces esta automaticamente sera una variable global</p>
+	<p id="demo2"></p>
+</body>
+<script>
+	//variable global
+	var carro="Volvo";
+	mifuncion();
+	
+	function mifuncion(){
+		document.getElementById("demo").innerHTML="puedo mostrar "+ carro;
+	}
+	mifuncion2();
+	document.getElementById("demo2").innerHTML="Puedo mostrar "+ carronombre;
+	function mifuncion2(){
+		//variable no declarada
+		carronombre="Volvo";
+	}
+</script>
+
+</html>

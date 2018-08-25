@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		var carros=["Toyota","Nissan","Mercedes"];
+		var i,len,text;
+		for (i = 0, len = carros.length,text="";i<len; i++) {
+			text+=carros[i]+"<br>";
+		}
+		var text2="";
+		document.getElementById("demo").innerHTML=text;
+		for (var i = 0; i < 5; i++) {
+			text2+="El numero es: "+ i +"<br>";
+		}
+		document.getElementById("demo2").innerHTML=text2;
+		var j=2;
+		len=carros.length;
+		text="";
+		for (; j < len; j++) {
+			text+=carros[j]+"<br>";
+		}
+		document.getElementById("demo3").innerHTML=text;
+		var person={nombre:"Raul",apellido:"Larriega",edad:22};
+		text="";
+		var x;
+		for(x in person){
+			text+=person[x];
+		}
+		document.getElementById("demo4").innerHTML=text;
+
+	</script>
+</body>
+</html>

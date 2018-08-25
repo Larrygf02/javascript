@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Metodos de numeros</title>
+</head>
+<body>
+	<h3>El metodo toString() convierte un numero a string</h3>
+	<p id="demo"></p>
+	<h3>El metodo toExponential() convierte un numero redondeado</h3>
+	<p id="demo2"></p>
+	<script>
+		var x=123;
+
+		document.getElementById("demo").innerHTML=x.toString()+"<br>"+
+		(123).toString()+"<br>"+(100+23).toString()+ "<br>"+typeof x;
+
+		var y=1.453;
+		document.getElementById("demo2").innerHTML=y.toExponential()+"<br>"+y.toExponential(2)+"<br>"+y.toExponential(4)+"<br>"+y.toExponential(6);
+	</script>
+</body>
+</html>

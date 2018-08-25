@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="intro">Mi primera pagina web</h1>
+	<p id="demo">Hola mundo</p>
+	<script type="text/javascript">
+		var mytext=document.getElementById("intro").childNodes[0].nodeValue;
+		document.getElementById("demo").innerHTML=mytext;
+		alert(document.body.innerHTML);
+	</script>
+</body>
+</html>

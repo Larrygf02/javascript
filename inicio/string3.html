@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script>
+		var x="John";
+		var y=new String("John");
+		var z=new String("John");
+		//el doble == compara los valores por eso devuelve true
+		document.getElementById("demo").innerHTML=(x==y);
+		//el tripoe === compara los tipos de valores por eso 
+		//devuelve false
+		document.getElementById("demo2").innerHTML=(x===y);
+		//dos objetos no pueden ser comparados por eso 
+		//devuelve false
+		document.getElementById("demo3").innerHTML=(y==z);
+	</script>
+</body>
+</html>

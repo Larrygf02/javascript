@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+	<p>Nombre anterior:</p>
+	<p id="demo"></p>
+	<p>Nombre actual:</p>
+	<p id="demo2"></p>
+	<p>Prototipo</p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		function person(nombre,apellido,edad,ojos){
+			this.nombre=nombre;
+			this.apellido=apellido;
+			this.edad=edad;
+			this.ojos=ojos;
+			this.cambionombre=function(name){
+				this.nombre=name;
+			}
+		}
+		person.prototype.nacionalidad="Peruana";
+		var madre= new person("Elena","Gallegos Rojas",56,"negro");
+		document.getElementById("demo").innerHTML=madre.nombre;
+		madre.cambionombre("Delia Elena")+" "+madre.nacionalidad;
+		document.getElementById("demo2").innerHTML=madre.nombre;
+		var padre=new person("Raul","Larriega",22,"marron");
+		document.getElementById("demo3").innerHTML=padre.nacionalidad;
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	 function validar(){
+	 	var x=document.forms["myform"]["nombre"].value;
+	 	if(x==null || x== ""){
+	 		alert("El nombre debe ser rellenado");
+	 		return false;
+	 	}
+	 }
+
+	</script>
+</head>
+<body>
+	<form name="myform" action="demo_form.asp" 
+	onsubmit="return validar()" method="post">
+	Name:<input type="text" name="nombre">
+	<input type="submit" value="submit">
+	</form>
+</body>
+</html>

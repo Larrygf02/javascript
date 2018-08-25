@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Break</title>
+	<p>La sentencia break detiene el bucle</p>
+	<p id="demo"></p>
+	<p>La sentencia continue rompe el bucle con una condicion especificada</p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		var text="";
+		for (var i = 0; i < 10; i++) {
+			
+			if(i==3){ra
+				break;
+			}
+			text+="El numero es :"+i +"<br>";
+		}
+		document.getElementById("demo").innerHTML=text;
+		text="";
+		for(i=0;i<10;i++){
+			if(i==3){continue;}
+			text+="El numero es :"+i+"<br>";
+		}
+		document.getElementById("demo2").innerHTML=text;
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

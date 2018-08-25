@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>El metodo toString devuelve una matriz como una cadena separada</p>
+	<p id="demo"></p>
+	<p>el metodo pop elimina el ultimo elemento de un arreglo</p>
+	<button onclick="mifuncion()">Intentalo</button>
+	<p id="demo2"></p>
+	<script>
+		var fruits=["Platano","Tuna","Naranja","Mango","Pera"];
+		document.getElementById("demo").innerHTML=fruits.toString();
+		document.write(fruits.join(" * "));
+		function mifuncion(){
+			fruits.pop();
+			document.getElementById("demo2").innerHTML=fruits;
+		}
+	</script>
+</body>
+</html>

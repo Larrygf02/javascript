@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		var txt="";
+		var person={nombre: "Raul",Apellido:"Larriega",edad:22,
+		NombreCompleto:function(){
+			return this.nombre+ " "+this.Apellido;
+		}};
+		//agregando un valor al objeto
+		person.nacionalidad="Peru";
+		//borrando un campo del objeto
+		delete person.edad;
+		for(x in person){
+			txt +=person[x];
+		}
+		document.getElementById("demo").innerHTML=txt;
+		document.getElementById("demo2").innerHTML=person.NombreCompleto();
+	</script>
+</body>
+</html>

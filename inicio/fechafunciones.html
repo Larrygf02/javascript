@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>El getTime() retorna el numero de milisegundos</p>
+	<p id="demo"></p>
+	<p>El getFullYear() retorna el año de la fecha</p>
+	<p id="demo2"></p>
+	<p>La getDay() retorna el dia de la semana como un numero(0-6)</p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<script>
+		var x=new Date();
+		document.getElementById("demo").innerHTML=x.getTime();
+		document.getElementById("demo2").innerHTML=x.getFullYear();
+		document.getElementById("demo3").innerHTML=x.getDay();
+		var days=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"];
+		document.getElementById("demo4").innerHTML=days[x.getDay()];
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>JavaScriot en body</title>
+</head>
+<body>
+	<h1>Mi primera pagina</h1>
+	<p id="demo">Un parrafo</p>
+	<button type="button" onclick="mifuncion()">Click</button>
+	
+	<script>
+		var x=true;
+		function mifuncion(){
+			if(x==true){
+				document.getElementById("demo").innerHTML="otro parrafo";
+				x=false;
+			}else{
+				document.getElementById("demo").innerHTML="Un parrafo";
+				x=true;
+			}		
+		}
+		
+	</script>
+</body>
+</html>

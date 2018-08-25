@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+	<p>Cual es el nombre de tu navegador</p>
+	<button onclick="datos()">Intentalo</button>
+	<p id="demo"></p>	
+	<p>Motor de navegador</p>
+	<p id="demo2"></p>	
+	<p>Plataforma de navegador de visualizacion</p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		function datos(){
+			document.getElementById("demo").innerHTML="Nombre es : "+
+			navigator.appName+ "<br>Code name es: "+navigator.appCodeName;
+			document.getElementById("demo2").innerHTML=navigator.product;
+			document.getElementById("demo3").innerHTML=navigator.platform;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

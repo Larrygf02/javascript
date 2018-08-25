@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<p>haz click para ver el codigo de confirmacion</p>
+	<button onclick="mifuncion()">Intentalo</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function mifuncion(){
+			var x;
+			if(confirm("Presiona un boton")==true){
+				x="Tu presionaste ok";
+			}else{
+				x="Tu presionaste Cancel";
+			}
+			document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+</body>
+</html>

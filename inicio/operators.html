@@ -1,0 +1,36 @@
+<!DOCTYPE>
+ <html>
+<head>
+	<title>Operadores</title>
+</head>
+<body>
+	<h1>Operadores matematicos</h1>
+	<p>Dado los numeros x=5 y y=20</p>
+	<h2>Suma</h2>
+	<p id="demo"></p>
+	<h2>Resta</h2>
+	<p id="demo2"></p>
+	<h2>Multiplicacion</h2>
+	<p id="demo3"></p>
+	<h2>Division</h2>
+	<p id="demo4"></p>
+	<h2>X + 5</h2>
+	<p id="demo5"></p>
+	<h2>Suma de textos</h2>
+	<p id="demo6"></p>
+	<script>
+		var x=5;
+		var y=20;
+		
+		var txt1="John";
+		txt1 +="Doe";
+		document.getElementById("demo").innerHTML=x+y;
+		document.getElementById("demo2").innerHTML=x-y;	
+		document.getElementById("demo3").innerHTML=x*y;
+		document.getElementById("demo4").innerHTML=x/y;
+		x+=5;
+		document.getElementById("demo5").innerHTML=x;
+		document.getElementById("demo6").innerHTML=txt1;
+	</script>
+</body>
+</html>

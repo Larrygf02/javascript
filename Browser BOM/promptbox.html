@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Click en el boton para demostrar como funciona el promptbox</p>
+	<button onclick="mifuncion()">intentalo</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function mifuncion(){
+			var person=prompt("Escribe tu nombre","Raul Larriega");
+			if(person !=null){
+				document.getElementById("demo").innerHTML="Hola " +
+				person+" como estas? "
+			}
+		}
+	</script>
+</body>
+</html>

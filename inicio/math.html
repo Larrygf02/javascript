@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Metodos math</title>
+</head>
+<body>
+	<h3>Math.random() devuelve un numero aleatorio entre 0 y 1</h3>
+	<button onclick="mifuncion()">Intentalo</button>
+	<p id="demo"></p>
+	<h3>Math.min() devuelve el menor numero de los parametros</h3>
+	<p id="demo2"></p>
+	<h3>Math.max() devuelve el menor numero de los parametros</h3>
+	<p id="demo3"></p>
+	<script>
+		function mifuncion(){
+			document.getElementById("demo").innerHTML=Math.random();
+			document.getElementById("demo2").innerHTML=Math.min(100,20,30,-12);
+			document.getElementById("demo3").innerHTML=Math.max(100,20,30,-12);
+		}
+	</script>
+</body>
+</html>

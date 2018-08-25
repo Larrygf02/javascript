@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>El metodo push agrega un nuevo elemento al arreglo</p>
+	<p id="demo"></p>
+	<button onclick="agregar()">Intentalo</button>
+	<p>El metodo shift remueve el primer elemento de un arreglo</p>
+	<p id="demo2"></p>
+	<button onclick="eliminar()">Intentalo </button>
+	<p>Vamos a reemplazar el primer elemento del arreglo</p>
+	<p id="demo3"></p>
+	<button onclick="reemplazar()">Intentalo</button>
+	<script>
+	var frutas=["platano","pera","manzano","melocoton"];
+			document.getElementById("demo").innerHTML=frutas;
+			document.getElementById("demo2").innerHTML=frutas;
+			document.getElementById("demo3").innerHTML=frutas;
+		function agregar(){
+						
+			frutas.push("berengena");
+			document.getElementById("demo").innerHTML=frutas;
+		}
+		function eliminar(){
+			frutas.shift();
+			document.getElementById("demo2").innerHTML=frutas;
+		}
+		function reemplazar(){
+			frutas[0]="kiwi";
+			document.getElementById("demo3").innerHTML=frutas;
+		}
+	</script>
+</body>
+</html>

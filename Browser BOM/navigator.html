@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Las cookies estan activadas en tu navegador</p>
+	<button onclick="cookies()">Intentalo</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function cookies(){
+			var x="";
+			if(navigator.cookieEnabled==true){
+				x="si estan activas las cookies"
+			}else{
+				x="no estan activas la cookies"
+			}
+			document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+</body>
+</html>

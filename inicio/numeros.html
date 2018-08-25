@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Numeros</title>
+</head>
+<body>
+	<p>Numeros constantes precidos por 0x son interpretados como hexadecimal</p>
+	<button onclick="mifuncion()">Intentalo</button>
+	<p id="demo"></p>
+	<p>El metodo toString() puede convertir numeros a base 16,base 8 o base 2 </p>
+	<p id="demo2"></p>
+	<p>Infinity es lo que se retorna si calculas un numero fuera del 
+		maximo posible</p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<script>
+		function mifuncion(){
+
+			document.getElementById("demo").innerHTML="0XFF= "+0xFF;
+			var numero=128;
+			document.getElementById("demo2").innerHTML="128 = "+
+			numero + "Decimal, "+numero.toString(16)+" Hexadecimal,"+
+			numero.toString(8)+ " octal, "+numero.toString(2)+" binario."
+			var numero2=2;
+			var txt=" ";
+			while(numero2!=Infinity){
+				numero2=numero2*numero2;
+				txt=txt+numero2+"<br>";
+			}
+			document.getElementById("demo3").innerHTML=txt;
+
+			document.getElementById("demo4").innerHTML=100/"10";
+			document.getElementById("demo5").innerHTML=100/"diez";
+		}
+	</script>
+</body>
+</html>

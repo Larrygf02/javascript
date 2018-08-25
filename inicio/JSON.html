@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>Creando un objeto de un JSON string</h2>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var text='{"trabajadores":['+
+		'{"nombre":"raul","apellido":"larriega"},'+
+		'{"nombre":"juan","apellido":"jimenez"},'+
+		'{"nombre":"cesar","apellido":"perez"}]}';
+		//convirtiendo un texto json a un objeto script
+		obj=JSON.parse(text);
+		var objeto=document.getElementById("demo");
+		for (var i = 0; i < 3; i++) {
+		objeto.innerHTML+=obj.trabajadores[i].nombre+" "+
+			obj.trabajadores[i].apellido+" <br>";
+			
+		}
+		
+		
+	</script>
+</body>
+</html>

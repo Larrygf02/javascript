@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>En este ejemplo llamaremos a la función multiplicar</p>
+	<p id="demo"></p>
+	<p>Una funcion tambien puede ser guardado en una variable</p>
+	<p id="demo2"></p>
+	<p>JavaScript tiene un constructor como funcion</p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		function multiplicar(a,b){
+			return a*b;
+		}
+		document.getElementById("demo").innerHTML=multiplicar(2,4);
+		var x= function sumar(a,b){
+			return a+b;
+		}
+		document.getElementById("demo2").innerHTML=x(2,2);
+		var restar=new Function("a","b","return a - b");
+		document.getElementById("demo3").innerHTML=restar(8,4);
+		
+	</script>
+
+</body>
+</html>

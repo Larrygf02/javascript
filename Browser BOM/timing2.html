@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Un script en esta pagina comienza un reloj</p>
+	<p id="demo"></p>
+	<button onclick="clearInterval(myvar)">Parar tiempo</button>
+	<script type="text/javascript">
+		var myvar=setInterval(myTimer,1000);
+		function myTimer(){
+			var d=new Date();
+			document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+		}
+	</script>
+</body>
+</html>

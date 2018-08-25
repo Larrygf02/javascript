@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		var frutas=["platano","manzana","pera"];
+		document.getElementById("demo").innerHTML=frutas+ isArray(frutas);
+		function isArray(x){
+			return x.constructor.toString().indexOf("Array")>-1;
+		}
+		var fecha=new Date();
+		document.getElementById("demo2").innerHTML=fecha + isDate(fecha);
+		function isDate(x){
+			return x.constructor.toString().indexOf("Date")>-1;
+		}
+	</script>
+</body>
+</html>

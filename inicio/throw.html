@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Insertar un numero entre 5 y 10</p>
+	<input id="demo" type="text">
+	<button type="button" onclick="mifuncion()">Intentalo</button>
+	<p id="msj"></p>
+	<script type="text/javascript">
+		function mifuncion(){
+			var msj,x;
+			msj=document.getElementById("msj");
+			msj.innerHTML="";
+			//capturando el valor de la caja de texto
+			x=document.getElementById("demo").value;
+			try{
+				if(x=="")throw "vacia";
+				if(isNaN(x)) throw "no es un numero";
+				x=Number(x);
+				if(x<5) throw "demasiado bajo";
+				if(x>10) throw "demasiado alto";
+			}catch(err){
+				msj.innerHTML=err;
+			}finally{
+				document.getElementById("demo").value="";
+			}
+		}
+
+	</script>
+</body>
+</html>

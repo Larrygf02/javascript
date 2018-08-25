@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p.negrita{
+			color:black;
+			font-size: 20px;
+
+		}
+	</style>
+</head>
+<body>
+	<p id="demo"></p>
+	<p class="negrita">Pagina hostname:</p>
+	<p id="demo2"></p>
+	<p class="negrita">Nombre de la ruta actual:</p>
+	<p id="demo3"></p>
+	<p class="negrita">El protocolo es </p>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML="Localizacion de la pagina es: "+window.location.href;
+		document.getElementById("demo2").innerHTML=window.location.hostname;
+		document.getElementById("demo3").innerHTML=window.location.pathname;
+		document.getElementById("demo4").innerHTML=window.location.protocol;
+	</script>
+</body>
+</html>

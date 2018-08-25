@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<button onclick="window.moveTo()">click</button>
+	<script type="text/javascript">
+		var w=window.innerWidth;
+		var h=window.innerHeight;
+		var z=screen.height;
+		var x=document.getElementById("demo");
+		x.innerHTML="Browser inner window width: "+ w+",height: "+h+"Screen height es: "+z;
+		document.getElementById("demo2").innerHTML="Screen color: "+screen.colorDepth;
+	</script>
+</body>
+</html>

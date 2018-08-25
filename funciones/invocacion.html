@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>La función global ( myFunction ) devuelve el producto de los argumentos ( a, b ​​) </p>
+	<p id="demo"></p>
+	<p>Objeto Global</p>
+	<p id="demo2"></p>
+	<p>Tambien podemos invocar una funcion mediante un objeto</p>
+	<p id="demo3"></p>
+	<p>Tambien podemos invocar una funcion por medio de un constructor</p>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		var objeto={
+			nombre:"Raul",
+			apellido:"Larriega",
+			fullnombre: function(){
+				return this.nombre+" "+this.apellido;
+			}
+		}
+		function myFunction(a,b){
+			return a*b;
+		}
+		document.getElementById("demo").innerHTML=myFunction(4,5);
+		//document.getElementById("demo").innerHTML=window.myFunction(4,5);
+		function mifuncion(){
+			return this;
+		}
+		function mifuncion2(arg1,arg2){
+			this.arg1=arg1;
+			this.arg2=arg2;
+		}
+		var x=new mifuncion2("Jhon","Doe");
+		document.getElementById("demo4").innerHTML=x.arg1;
+		document.getElementById("demo2").innerHTML=mifuncion();
+		document.getElementById("demo3").innerHTML=objeto.fullnombre();
+	</script>
+</body>
+</html>

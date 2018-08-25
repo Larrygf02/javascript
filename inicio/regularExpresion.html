@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Busca un String "w3Schools", y devuelve la posicion</p>
+	<button onclick="mifuncion()">Intentalo</button>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		function mifuncion(){
+			var str="Visitar w3Schools";
+			var n=str.search(/w3Schools/i);
+			document.getElementById("demo").innerHTML=n;
+			var str1="Hola mundo";
+			var rest=str1.replace(/mundo/i,"raul");
+			document.getElementById("demo2").innerHTML=rest;
+		}
+	</script>
+
+</body>
+</html>

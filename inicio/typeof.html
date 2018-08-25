@@ -1,0 +1,21 @@
+<!DOCTYPE>
+ <html>
+<head>
+	<title>Typeof</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h2>Varibles indefinidas</h2>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script type="text/javascript">
+    	document.getElementById("demo").innerHTML="jhon es " +typeof "jhon"+"<br>"+3.14+" es "+typeof 3.14+"<br>"+false+ " es "+typeof false+"<br>"+[1,2,3,4]+" es "+typeof 3.14+"<br>"+{nombre:"raul",edad:22}+" es"+typeof {nombre:"raul",edad:22}+"<br>"
+    	//variables indefinidas
+    	var person;
+    	document.getElementById("demo2").innerHTML=person;
+    	var text="";
+    	document.getElementById("demo3").innerHTML="el valor es: "+ text
+    	+"<br>"+"el tipo es: "+typeof text;
+    </script>
+</body>
+</html>

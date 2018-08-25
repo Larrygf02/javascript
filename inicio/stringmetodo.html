@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Metodos String</title>
+</head>
+<body>
+	
+	<meta charset="utf-8">
+	<p id="p1">Hola mundo como estas mundo</p>
+	<button onclick="mifuncion()">año</button>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<script>
+		function mifuncion(){
+			//capturando el valor del parrafo con id p1
+			var r=document.getElementById("p1").innerHTML;
+			//capturando la primera posicion de la palabra mundo
+			var pos=r.indexOf("mundo");
+			document.getElementById("demo").innerHTML=pos;
+			//capturando donde se encuentra por ultima ves la palabra mundo
+			var pos2=r.lastIndexOf("mundo");
+			document.getElementById("demo2").innerHTML=pos2;	
+			var pos3=r.search("mundo");
+			document.getElementById("demo3").innerHTML=pos3;
+			//con el metodo slice devolveremos la palabra que se encuentra
+			//entre la posicion 5 y 10
+			var res=r.slice(5,10);
+			document.getElementById("demo4").innerHTML=res;
+			//si le ponemos un parametro devolvera desde la posicion que se coloque hasta el final
+			var res2=r.slice(5);
+			document.getElementById("demo5").innerHTML=res2;
+			//el metodo replace remplaza un valor
+			var txt=r.replace("mundo","raul");
+			document.getElementById("demo6").innerHTML=txt;
+			//con el /g reemplazaremos todos los datos
+			var txt2=r.replace(/mundo/g,"raul");
+			document.getElementById("demo7").innerHTML=txt2;
+			//lo upperCase para convertir todo a mayuscula
+			var txt3=r.toUpperCase();
+			document.getElementById("demo8").innerHTML=txt3;
+			//tolowerCase para convertir todo a minuscula
+			var txt4=r.toLowerCase();
+			document.getElementById("demo9").innerHTML=txt4;
+		}
+	
+	</script>
+	
+</body>
+</html>

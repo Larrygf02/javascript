@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>El establecimiento de un valor predeterminado para un parametro de una funcion</p>
+	<p id="demo"></p>
+	<p>JavaScript tiene un objeto de argumentos que tiene una matriz de estos para invocarlos,asi podemos poner inumerables parametros a una funcion</p>
+	<p>En el sisguiente ejemplo llamamos a una funcion para encontrar el maximo numero de 4,5,6,23,12</p>
+	<p id="demo2"></p>
+	<p>O sino tambien la suma de estos</p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		function mifuncion(x,y){
+			if(y==undefined){
+				y=0;
+			}
+			return x*y;
+		}
+		function maximo(){
+			var i;
+			var max=-Infinity;
+			for(i=0;i<arguments.length;i++){
+				if(arguments[i]>max){
+					max=arguments[i];
+				}
+			}
+			return max;
+		}
+		function sumatodo(){
+			var i;
+			var sum=0;
+			for(i=0;i<arguments.length;i++){
+				sum+=arguments[i];
+			}
+			return sum;
+		}
+		document.getElementById("demo").innerHTML=mifuncion(4);
+		document.getElementById("demo2").innerHTML=maximo(4,5,6,23,12);
+		document.getElementById("demo3").innerHTML=sumatodo(4,5,6,23,12);
+	</script>
+</body>
+</html>

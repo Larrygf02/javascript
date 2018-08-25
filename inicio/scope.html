@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Alcance de las variables</title>
+</head>
+<body>
+	<p>Una variable local solo puede ser accedido desde la funcion que se creo</p>
+	<p id="demo"></p>
+</body>
+<script>
+	
+	mifuncion();
+	document.getElementById("demo").innerHTML="puedo mostrar "+ typeof carro;
+	function mifuncion(){
+		//variable local
+		var carro="Volvo";
+	}
+</script>
+
+</html>

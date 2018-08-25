@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 onclick="this.innerHTML='Ooops'">Haz click en este texto</h1>
+	<p>Click en el boton para ver la hora</p>
+	<button onclick="displayDate()">La hora es?</button>
+	<script type="text/javascript">
+		function displayDate(){
+			document.getElementById("demo").innerHTML=Date();
+		}
+	</script>
+	<p id="demo"></p>
+</body>
+</html>
